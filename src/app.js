@@ -51,9 +51,9 @@ const weather = {
     const API_KEY = "e84ea5c52ea447a2e7b086b1965a2b3b";
     let api;
     if (latitude && longitude) {
-      api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
+      api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
     } else if (city) {
-      api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+      api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
     }
     if ((latitude && longitude) || city.length > 1) {
       fetch(api)
