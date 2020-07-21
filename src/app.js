@@ -1,5 +1,5 @@
 import moment from "moment";
-import _ from "lodash";
+import debounce from "lodash/debounce";
 
 const cityInput = document.querySelector(".weather__search");
 const location = document.querySelector(".weather__location-city");
@@ -119,7 +119,7 @@ function showError(error) {
 
 cityInput.addEventListener(
   "input",
-  _.debounce(() => {
+  debounce(() => {
     weather.getWeather({ city: cityInput.value });
   }, 600)
 );
