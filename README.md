@@ -12,4 +12,4 @@
 
 [LIVE VERSION](https://kmkukla.github.io/current-weather-and-time-around-the-world/dist/)
 
-![image](preview.png)
+![image](preview.jpg)
